@@ -48,10 +48,7 @@ export async function POST(req) {
         // GET Youtube Videos
 
         const youtubeData = await GetYoutubeVideo(chapter?.chapterName);
-        console.log({
-            youtubeVideo: youtubeData,
-            courseData: JSONResp
-        })
+
         return {
             youtubeVideo: youtubeData,
             courseData: JSONResp
@@ -91,6 +88,5 @@ const GetYoutubeVideo = async (topic) => {
         }
         youtubeVideoList.push(data);
     })
-    console.log("youtubeVideoList", youtubeVideoList)
     return youtubeVideoList;
 }
