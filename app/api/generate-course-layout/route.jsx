@@ -9,7 +9,7 @@ import { eq } from 'drizzle-orm';
 import { NextResponse } from 'next/server';
 
 
-const PROMPT = `Genrate Learning Course depends on following details. In which Make sure to add Course Name, 
+const PROMPT = `Generate Learning Course depends on following details. In which Make sure to add Course Name, 
 Description,Course Banner Image Prompt Depends on Course Topics in 3d illustration.
   Chapter Name, , Topic under each chapters ,
    Duration for each chapters etc, in JSON format only
@@ -89,7 +89,12 @@ export async function POST(req) {
     const ImagePrompt = JSONResp.course?.bannerImagePrompt;
 
     //generate Image
-    const bannerImageUrl = await GenerateImage(ImagePrompt)
+    // const bannerImageUrl = await GenerateImage(ImagePrompt)
+
+    // console.log('api-generate-course - bannerImageUrl: ', bannerImageUrl);
+
+    const bannerImageUrl = https://firebasestorage.googleapis.com/v0/b/projects-2025-71366.firebasestorage.app/o/ai-guru-lab-images%2F1748097408314.png?alt=media&token=27cbfb86-237f-450b-a26c-6e874f0d0ff3
+
     // Save to Database
     const result = await db.insert(coursesTable).values({
         ...formData,
@@ -124,4 +129,3 @@ const GenerateImage = async (imagePrompt) => {
     console.log(result.data.image) //Output Result: Base 64 Image
     return result.data.image;
 }
-
