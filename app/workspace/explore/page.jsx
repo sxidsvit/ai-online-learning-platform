@@ -16,7 +16,6 @@ function Explore() {
     }, [user])
     const GetCourseList = async () => {
         const result = await axios.get('/api/courses?courseId=0');
-        console.log(result.data);
         setCourseList(result.data)
     }
     return (

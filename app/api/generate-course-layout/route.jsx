@@ -126,6 +126,5 @@ const GenerateImage = async (imagePrompt) => {
                 'Content-Type': 'application/json', // Content Type
             },
         })
-    console.log(result.data.image) //Output Result: Base 64 Image
     return result.data.image;
 }

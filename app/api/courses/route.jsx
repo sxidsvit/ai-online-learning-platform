@@ -16,15 +16,12 @@ export async function GET(req) {
             .orderBy(desc(coursesTable.id))
             ;
 
-        console.log(result);
-
         return NextResponse.json(result);
     }
     if (courseId) {
         const result = await db.select().from(coursesTable)
             .where(eq(coursesTable.cid, courseId));
 
-        console.log(result);
 
         return NextResponse.json(result[0]);
     }
@@ -34,7 +31,6 @@ export async function GET(req) {
             .orderBy(desc(coursesTable.id));
 
 
-        console.log(result);
 
         return NextResponse.json(result);
     }

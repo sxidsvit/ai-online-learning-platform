@@ -17,7 +17,6 @@ export async function POST(req) {
             email: email
         }).returning(usersTable);
 
-        console.log(result);
         return NextResponse.json(result)
     }
 

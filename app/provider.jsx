@@ -19,7 +19,6 @@ function Provider({ children }) {
             name: user?.fullName,
             email: user?.primaryEmailAddress?.emailAddress
         });
-        console.log(result.data);
         setUserDetail(result.data);
     }
     return (

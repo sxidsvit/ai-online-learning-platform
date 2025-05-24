@@ -65,7 +65,6 @@ function AddNewCourseDialog({ children }) {
         }
         catch (e) {
             setLoading(false)
-            console.log(e)
         }
     }
 
