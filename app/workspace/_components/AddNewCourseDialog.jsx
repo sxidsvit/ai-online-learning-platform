@@ -44,11 +44,9 @@ function AddNewCourseDialog({ children }) {
             ...prev,
             [field]: value
         }));
-        console.log(formData);
     }
 
     const onGenerate = async () => {
-        console.log(formData);
         const courseId = uuidv4();
 
         try {

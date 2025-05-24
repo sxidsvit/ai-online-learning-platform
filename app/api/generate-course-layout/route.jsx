@@ -93,7 +93,7 @@ export async function POST(req) {
 
     // console.log('api-generate-course - bannerImageUrl: ', bannerImageUrl);
 
-    const bannerImageUrl = https://firebasestorage.googleapis.com/v0/b/projects-2025-71366.firebasestorage.app/o/ai-guru-lab-images%2F1748097408314.png?alt=media&token=27cbfb86-237f-450b-a26c-6e874f0d0ff3
+    const bannerImageUrl = 'https://firebasestorage.googleapis.com/v0/b/projects-2025-71366.firebasestorage.app/o/ai-guru-lab-images%2F1748097408314.png?alt=media&token=27cbfb86-237f-450b-a26c-6e874f0d0ff3'
 
     // Save to Database
     const result = await db.insert(coursesTable).values({
