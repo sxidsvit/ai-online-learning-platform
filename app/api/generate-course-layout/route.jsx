@@ -81,7 +81,7 @@ export async function POST(req) {
         contents,
     });
 
-    console.log(response.candidates[0].content.parts[0].text);
+    // console.log(response.candidates[0].content.parts[0].text);
     const RawResp = response?.candidates[0]?.content?.parts[0]?.text
     const RawJson = RawResp.replace('```json', '').replace('```', '');
     const JSONResp = JSON.parse(RawJson);
@@ -96,6 +96,7 @@ export async function POST(req) {
     const bannerImageUrl = 'https://firebasestorage.googleapis.com/v0/b/projects-2025-71366.firebasestorage.app/o/ai-guru-lab-images%2F1748097408314.png?alt=media&token=27cbfb86-237f-450b-a26c-6e874f0d0ff3'
 
     // Save to Database
+
     const result = await db.insert(coursesTable).values({
         ...formData,
         courseJson: JSONResp,
