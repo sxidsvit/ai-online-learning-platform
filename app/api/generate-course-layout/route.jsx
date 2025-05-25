@@ -89,7 +89,7 @@ export async function POST(req) {
     const ImagePrompt = JSONResp.course?.bannerImagePrompt;
 
     // generate Image
-    const bannerImageUrl = await GenerateImage(ImagePrompt)
+    const bannerImageUrl = await GenerateImage(ImagePrompt);
 
     console.log('api-generate-course - bannerImageUrl: ', bannerImageUrl);
 
