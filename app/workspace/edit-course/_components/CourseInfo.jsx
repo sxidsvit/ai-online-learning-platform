@@ -58,7 +58,7 @@ function CourseInfo({ course, viewCourse }) {
                             <Book className='text-green-500' />
                             <section>
                                 <h2 className='font-bold'>Chapters</h2>
-                                <h2>2 Hours</h2>
+                                <h2>{courseLayout?.noOfChapters}</h2>
                             </section>
                         </div>
                         <div className='flex gap-5 items-center p-3 rounded-lg shadow'>
