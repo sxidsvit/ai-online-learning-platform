@@ -26,6 +26,7 @@ Modern AI-powered online learning platform built with Next.js. [Live Demo](https
 - Beautiful UI with Tailwind CSS and Radix UI components
 - Responsive design for all devices
 - YouTube video integration
+- Images generation by AI Guru Lab 
 - Real-time progress tracking
 
 ## Tech Stack
@@ -35,7 +36,7 @@ Modern AI-powered online learning platform built with Next.js. [Live Demo](https
 - **Authentication**: Clerk
 - **Database**: Neon PostgreSQL + Drizzle ORM
 - **Styling**: Tailwind CSS, Radix UI
-- **AI Integration**: Google GenAI
+- **AI Integration**: Google GenAI, AI Guru Lab
 - **Utilities**: Axios, UUID, React Markdown
 - **Components**: Lucide Icons, Sonner Toasts
 
