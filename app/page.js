@@ -23,32 +23,17 @@ export default function Home() {
               </svg>
             </button>
           </div>
-          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
-              <li>
-                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 transition duration-300 ease-in-out" aria-current="page">Home</a>
-              </li>
-              <li>
-                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 transition duration-300 ease-in-out">Features</a>
-              </li>
-              <li>
-                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 transition duration-300 ease-in-out">Pricing</a>
-              </li>
-              <li>
-                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 transition duration-300 ease-in-out">Contact</a>
-              </li>
-            </ul>
-          </div>
+
         </div>
       </nav>
 
       <section id="hero" class="relative pt-20 overflow-hidden clickable-section hover-section">
         <div class="container mx-auto px-4 py-16 text-center">
           <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 animate__animated animate__fadeInDown">
-            Unlock Your Potential with <span class="gradient-text-teal">AI-Powered Learning</span> 🚀
+            Create Your Own Courses with <span class="gradient-text-teal">AI-Powered Innovation</span> 🚀
           </h1>
           <p class="text-lg md:text-xl text-gray-700 mb-10 animate__animated animate__fadeInUp">
-            Experience personalized learning paths, instant feedback, and intelligent insights.
+            Craft Personalized Courses with AI-Driven Feedback and Insights.
           </p>
           <div class="flex justify-center space-x-4 animate__animated animate__zoomIn">
             <Link href={'/workspace'}> <button type="button" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-8 py-4 text-center inline-flex items-center transition duration-300 ease-in-out transform hover:scale-105">
@@ -59,7 +44,7 @@ export default function Home() {
             </button></Link>
           </div>
           <div class="mt-16">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80" alt="AI-Powered Learning" class="rounded-lg shadow-xl mx-auto max-w-full h-auto animate__animated animate__fadeInUp animate__delay-0.5s" />
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80" alt="AI-Powered Learning" class="rounded-lg shadow-xl mx-auto max-w-full h-auto animate__animated animate__fadeInUp animate__delay-0.5s" />
           </div>
         </div>
       </section>
@@ -94,17 +79,17 @@ export default function Home() {
             <div class="p-8 rounded-lg shadow-md bg-blue-700 bg-opacity-50 transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__fadeInLeft">
               <div class="text-4xl mb-4"><i class="fas fa-user-plus"></i></div>
               <h3 class="text-xl font-semibold mb-4">Sign Up</h3>
-              <p>Create your free account in minutes.</p>
+              <p>Get Started Free: Create AI-Powered Courses Instantly.</p>
             </div>
             <div class="p-8 rounded-lg shadow-md bg-blue-700 bg-opacity-50 transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__fadeInUp animate__delay-0.2s">
               <div class="text-4xl mb-4"><i class="fas fa-book-open"></i></div>
               <h3 class="text-xl font-semibold mb-4">Explore Courses</h3>
-              <p>Browse through our vast library of AI-powered courses.</p>
+              <p>Discover a World of AI-Generated Courses</p>
             </div>
             <div class="p-8 rounded-lg shadow-md bg-blue-700 bg-opacity-50 transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__fadeInRight animate__delay-0.4s">
               <div class="text-4xl mb-4"><i class="fas fa-graduation-cap"></i></div>
               <h3 class="text-xl font-semibold mb-4">Start Learning</h3>
-              <p>Begin your personalized learning journey today!</p>
+              <p>Launch Your Custom Learning Path with AI Now!</p>
             </div>
           </div>
         </div>
@@ -118,24 +103,24 @@ export default function Home() {
               <div class="flex items-center mb-6">
                 <img src="https://static.vecteezy.com/system/resources/thumbnails/005/346/410/small_2x/close-up-portrait-of-smiling-handsome-young-caucasian-man-face-looking-at-camera-on-isolated-light-gray-studio-background-photo.jpg" alt="User Avatar" class="w-12 h-12 rounded-full mr-4 object-cover" />
                 <div>
-                  <p class="font-semibold">John Doe</p>
+                  <p class="font-semibold">Jordan Velt</p>
                   <p class="text-sm text-gray-600">Student</p>
                 </div>
               </div>
               <blockquote class="text-gray-700 italic">
-                "The AI-powered feedback has been a game-changer for my learning. It's like having a personal tutor!"
+                "The AI-driven course creation tools transformed my teaching—it's like having an expert assistant!"
               </blockquote>
             </div>
             <div class="bg-gray-100 p-8 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__fadeInRight">
               <div class="flex items-center mb-6">
                 <img src="https://static.vecteezy.com/system/resources/thumbnails/005/346/410/small_2x/close-up-portrait-of-smiling-handsome-young-caucasian-man-face-looking-at-camera-on-isolated-light-gray-studio-background-photo.jpg" alt="User Avatar" class="w-12 h-12 rounded-full mr-4 object-cover" />
                 <div>
-                  <p class="font-semibold">Jane Smith</p>
+                  <p class="font-semibold">Born Luinse</p>
                   <p class="text-sm text-gray-600">Educator</p>
                 </div>
               </div>
               <blockquote class="text-gray-700 italic">
-                "Integrating AI into my teaching has never been easier. The platform is intuitive and powerful."
+                "Crafting AI-powered courses is effortless with this intuitive platform!"
               </blockquote>
             </div>
           </div>
@@ -146,17 +131,19 @@ export default function Home() {
         <div class="container mx-auto px-4">
           <h2 class="text-3xl md:text-4xl font-bold mb-6 animate__animated animate__fadeInUp">Ready to Start Your Learning Journey? 🚀</h2>
           <p class="text-lg md:text-xl mb-8 animate__animated animate__fadeInUp animate__delay-0.2s">Join thousands of learners achieving their goals with our AI platform.</p>
-          <button type="button" class="text-purple-700 bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-lg px-8 py-4 text-center inline-flex items-center transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__zoomIn">
-            Sign Up for Free <i class="fas fa-arrow-right ml-2"></i>
-          </button>
+          <Link href={'/workspace'}>
+            <button type="button" class="text-purple-700 bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-lg px-8 py-4 text-center inline-flex items-center transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__zoomIn">
+              Sign Up for Free <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+          </Link>
         </div>
-      </section>
+      </section >
 
       <footer class="bg-gray-800 text-gray-300 py-12">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 class="text-xl font-semibold mb-4 text-white">AI-Powered Learning</h3>
-            <p class="text-sm">Empowering the next generation of learners with cutting-edge AI technology.</p>
+            <p class="text-sm">Shaping Tomorrow’s Education with AI-Powered Tools</p>
           </div>
           <div>
             <h3 class="text-xl font-semibold mb-4 text-white">Quick Links</h3>
@@ -185,10 +172,10 @@ export default function Home() {
           </div>
         </div>
         <div class="container mx-auto px-4 mt-8 text-center text-sm">
-          © 2024 AI-Powered Learning Hub. All rights reserved.
+          © 2025 AI-Powered Learning SAAS. All rights reserved.
         </div>
       </footer>
-    </div>
+    </div >
 
   );
 }
