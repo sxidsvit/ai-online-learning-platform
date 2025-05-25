@@ -1,8 +1,15 @@
 # AI Online Learning Platform
 
-A modern, open-source web application inspired by Perplexity AI, delivering real-time, AI-powered question answering with seamless user experiences and robust background task automation.
+[![Next.js](https://img.shields.io/badge/Next.js-15.2.5-000000.svg)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-18.0.0-61DAFB.svg)](https://reactjs.org/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4.svg)](https://tailwindcss.com/)
+[![Clerk](https://img.shields.io/badge/Clerk-Auth-3D4F5D.svg)](https://clerk.com/)
+[![Neon](https://img.shields.io/badge/Neon-Database-12FFF7.svg)](https://neon.tech/)
 
-[Live Demo](https://ai-online-learning-platform.vercel.app) 
+Modern AI-powered online learning platform built with Next.js. [Live Demo](https://ai-learning-platform.vercel.app/) 
+
+
+[Site](https://ai-perplexity-clone.vercel.app) 
 
 ---
 
@@ -10,95 +17,95 @@ A modern, open-source web application inspired by Perplexity AI, delivering real
 
 ---
 
-## 🚀 Features
+## Features
 
-- **Real-Time AI Responses**: Powered by Gemini AI for accurate, context-aware answers.
-- **Internet Search Integration**: Utilizes the [Brave Web Search API](https://api-dashboard.search.brave.com/app/documentation/web-search/get-started) for fast, privacy-focused web searches.
-- **Event-Driven Workflows**: Leverages Inngest for reliable, scalable background tasks.
-- **Secure Authentication**: Managed by Clerk for seamless user sign-in and sign-up.
-- **Scalable Backend**: Built with Supabase for PostgreSQL, real-time APIs, and storage.
-- **Modern Frontend**: Crafted with Next.js, React, Tailwind CSS, and Shadcn UI for a responsive, intuitive interface.
-- **Effortless Deployment**: Hosted on Vercel with automatic scaling and zero-downtime updates.
+- AI-powered course recommendations using Google GenAI
+- Secure user authentication with Clerk
+- Interactive course content with React Markdown
+- Serverless database with Neon and Drizzle ORM
+- Beautiful UI with Tailwind CSS and Radix UI components
+- Responsive design for all devices
+- YouTube video integration
+- Real-time progress tracking
 
-## 🛠️ Technologies Used
+## Tech Stack
 
-- **Next.js**: React framework for server-side rendering, API routes, and optimized performance.
-- **Tailwind CSS & Shadcn UI**: For rapid, responsive styling and pre-built UI components.
-- **Clerk**: Secure, user-friendly authentication and session management.
-- **Inngest**: Event-driven platform for reliable workflows and AI task automation.
-- **Supabase**: Open-source Backend-as-a-Service with PostgreSQL, real-time APIs, and serverless functions.
-- **Gemini AI**: Advanced language model for generating intelligent, personalized responses.
-- **Brave Web Search API**: Privacy-respecting API for web search capabilities.
-- **Vercel**: Simplified deployment, hosting, and scaling for web applications.
+- **Framework**: Next.js 15 (App Router)
+- **Frontend**: React 18, TypeScript
+- **Authentication**: Clerk
+- **Database**: Neon PostgreSQL + Drizzle ORM
+- **Styling**: Tailwind CSS, Radix UI
+- **AI Integration**: Google GenAI
+- **Utilities**: Axios, UUID, React Markdown
+- **Components**: Lucide Icons, Sonner Toasts
 
-## 📋 Prerequisites
+## Project Structure
+```
+ai-online-learning-platform/
+├── app/
+│ ├── (auth)/ # Authentication routes
+│ ├── (main)/ # Protected routes
+│ ├── api/ # API routes
+│ └── courses/ # Course pages
+├── components/ # Shared components
+├── lib/ # Utility functions
+├── styles/ # Global CSS
+├── public/ # Static assets
+├── drizzle/ # Database schema
+├── package.json # Project dependencies
+└── README.md
+```
 
-- Node.js (v16 or higher)
-- npm or Yarn
-- Accounts for Clerk, Supabase, Inngest, Gemini AI, Brave, and Vercel (for deployment)
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+- Clerk account (for authentication)
+- Neon database account
+- Google GenAI API key
 
 ## ⚙️ Setup
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/sxidsvit/ai-perplexity-clone.git
-   cd ai-perplexity-clone
+         git clone https://github.com/sxidsvit/ai-online-learning-platform.git
+         cd ai-online-learning-platform
    ```
 
 2. **Install Dependencies**:
    ```bash
-   npm install
+        npm install
    ```
 
 3. **Configure Environment Variables**:
    Create a `.env` file in the root directory and add the following:
    ```env
+
     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-    CLERK_SECRET_KEY=
-    
+
     NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
     NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
     NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
     NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
-    
-    
+
+
     DATABASE_URL=
     NEXT_PUBLIC_DATABASE_URL=
-    
-    
-    YOUTUBE_API_KEY=
+
+
     GEMINI_API_KEY=
+
+    AI_GURU_LAB_API=
+
+    YOUTUBE_API_KEY=
    ```
 
-4. **Run the Inngest Development Server**:
-   In a separate terminal, start the Inngest local development server:
-   ```bash
-   npx inngest-cli@latest dev
-   ```
-
-5. **Run the Application Development Server**:
-   In the main terminal, start the Next.js development server:
-   ```bash
-   npm run dev
-   ```
-
-6. **Access the App**:
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## 🚀 Deployment
-
-Deploy to Vercel in just a few steps:
-
-1. Push your repository to GitHub.
-2. Connect your repository to Vercel via the Vercel dashboard.
-3. Configure environment variables in Vercel.
-4. Deploy with:
-   ```bash
-   npm run build
-   vercel --prod
-   ```
-
-Alternatively, use Vercel’s GitHub integration for automatic deployments on every push.
+4. **Start development server:**
+```
+bash
+npm run dev
+```
+---
 
 ## 📬 Contact
 
@@ -111,22 +118,3 @@ Connect with the project maintainer:
 ## 🙏 Acknowledgements
 
 A heartfelt thank you to [Tubeguruji](https://www.youtube.com/@tubeguruji) for their inspiring tutorials and invaluable contributions to the developer community.
-
----
-
-
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
-NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
-
-
-DATABASE_URL=
-NEXT_PUBLIC_DATABASE_URL=
-
-
-YOUTUBE_API_KEY=
-GEMINI_API_KEY=
