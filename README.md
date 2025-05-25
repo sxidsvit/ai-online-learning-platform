@@ -9,7 +9,7 @@
 Modern AI-powered online learning platform built with Next.js. [Live Demo](https://ai-learning-platform.vercel.app/) 
 
 
-[Site](https://ai-perplexity-clone.vercel.app) 
+[Site](https://ai-online-learning-platform.vercel.app/) 
 
 ---
 
