@@ -48,7 +48,7 @@ export async function POST(req) {
     const { courseId, ...formData } = await req.json();
     const user = await currentUser();
     const { has } = await auth()
-    const hasPremiumAccess = has({ plan: 'starter' })
+    const hasPremiumAccess = has({ plan: 'starter' }) || has({ plan: 'premium' })
     const config = {
         responseMimeType: 'text/plain',
 
@@ -81,18 +81,18 @@ export async function POST(req) {
         contents,
     });
 
-    // console.log(response.candidates[0].content.parts[0].text);
+
     const RawResp = response?.candidates[0]?.content?.parts[0]?.text
     const RawJson = RawResp.replace('```json', '').replace('```', '');
     const JSONResp = JSON.parse(RawJson);
 
     const ImagePrompt = JSONResp.course?.bannerImagePrompt;
 
-    const bannerImageUrl = await GenerateImage(ImagePrompt);
+    // const bannerImageUrl = await GenerateImage(ImagePrompt);
 
-    console.log('api-generate-course - bannerImageUrl: ', bannerImageUrl);
+    // console.log('api-generate-course - bannerImageUrl: ', bannerImageUrl);
 
-    // const bannerImageUrl = 'https://firebasestorage.googleapis.com/v0/b/projects-2025-71366.firebasestorage.app/o/ai-guru-lab-images%2F1748097408314.png?alt=media&token=27cbfb86-237f-450b-a26c-6e874f0d0ff3'
+    const bannerImageUrl = 'https://firebasestorage.googleapis.com/v0/b/projects-2025-71366.firebasestorage.app/o/ai-guru-lab-images%2F1748209869537.png?alt=media&token=ac41b974-ec15-4295-90d0-0f6ea3cf4a79'
 
     // Save to Database
 

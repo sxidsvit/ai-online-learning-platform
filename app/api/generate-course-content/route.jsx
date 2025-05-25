@@ -40,7 +40,6 @@ export async function POST(req) {
             config,
             contents,
         });
-        // console.log(response.candidates[0].content.parts[0].text);
         const RawResp = response.candidates[0].content.parts[0].text
         const RawJson = RawResp.replace('```json', '').replace('```', '').trim();
         const JSONResp = JSON.parse(RawJson);

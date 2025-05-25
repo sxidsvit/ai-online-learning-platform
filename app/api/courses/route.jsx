@@ -13,8 +13,7 @@ export async function GET(req) {
     if (courseId == 0) {
         const result = await db.select().from(coursesTable)
             .where(sql`${coursesTable.courseContent}::jsonb != '{}'::jsonb`)
-            .orderBy(desc(coursesTable.id))
-            ;
+            .orderBy(desc(coursesTable.id));
 
         return NextResponse.json(result);
     }
